@@ -11,6 +11,10 @@ public class CrimeLab  {
     private  static CrimeLab sCrimeLab;
     private List<Crime> mCrimes;
 
+    public List<Crime> getCrimes() {
+        return mCrimes;
+    }
+
     public static CrimeLab get(Context context) {
         if (sCrimeLab == null) {
             sCrimeLab = new CrimeLab(context);
